@@ -1,14 +1,20 @@
+require("dotenv").config();
+
 const express = require("express");
 const app = express();
-require("./routes")(app);
+const cors = require("cors");
 
-app.get("/", function (req, res) {
-	res.send("API is running");
-});
-app.get("*", function (req, res) {
-	res.status(404).send("404 Moment");
-});
+// import routes
+const authRoute = require("./routes/auth");
 
-app.listen(3000, () => {
-	console.log("[!] API Server is up http://localhost:3000");
+// express middlewares
+app.use(express.json());
+app.use(cors());
+
+// route middlewares
+app.use("/api/auth", authRoute);
+
+// Server
+const server = app.listen(process.env.SERVER_PORT || 5000, () => {
+  console.log(`Server Running on port ${server.address().port}!`);
 });
