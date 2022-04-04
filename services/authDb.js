@@ -47,7 +47,7 @@ const login = async (email, password) => {
       throw new Error("Wrong password");
     }
 
-    const token = jwt.sign({ id: user.id }, process.env.TOKEN_SECRET);
+    const token = jwt.sign({ id: user.id, cpf: user.cpf }, process.env.TOKEN_SECRET);
     return { user: user.dataValues, token };
   } catch (e) {
     throw new Error(e.message);
