@@ -146,7 +146,7 @@ Distributed under the MIT License. See  `LICENSE`  for more information.
     </td>
     <td align="center">
       <a href="https://www.linkedin.com/in/marcelofeitoza7/">
-        <img src="https://avatars3.githubusercontent.com/u/71825192?v=4" width="100px;" alt="Marcelo Feitoza profile image"/><br>
+        <img src="https://ca.slack-edge.com/T02DWH2MXQR-U02UD8HCRNF-55720201b016-512" width="100px;" alt="Marcelo Feitoza profile image"/><br>
         <sub>
           <b>Marcelo Feitoza</b>
         </sub>
